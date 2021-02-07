@@ -208,7 +208,7 @@ class ChoreData(object):
         self.assignment_type = parsed_json.get("assignment_type")
         self.assignment_config = parsed_json.get("assignment_config")
         self.next_execution_assigned_to_user_id = parse_int(
-            "next_execution_assigned_to_user_id"
+            parsed_json.get("next_execution_assigned_to_user_id")
         )
         self.userfields = parsed_json.get("userfields")
 
